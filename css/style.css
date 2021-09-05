@@ -1,9 +1,14 @@
-::after, ::before, * {
+::after,
+::before,
+* {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-decoration: none;
+}
+
+body {
   font-family: 'Signika Negative', 'sans-serif';
 }
 /*# sourceMappingURL=style.css.map */
