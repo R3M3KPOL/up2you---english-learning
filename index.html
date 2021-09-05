@@ -20,18 +20,23 @@
 </head>
 
 <body>
-    <header>
-        <h1><a href="#"><img src="/img/logo&heroImg/Logo.png" alt="logo firmy up2you"></a></h1>
-        <ul>
-            <li><a href="#">O nas</a></li>
-            <li><a href="#">Oferta</a>
-                <ul>
-                    <li><a href="#">Dla Firm</a></li>
-                    <li><a href="#">Dla osób prywatnych</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Kontakt</a></li>
-        </ul>
+    <header class="header">
+        <h1 class="header__title"><a class="header__img" href="#"><img src="/img/logo&heroImg/Logo.png"
+                    alt="logo firmy up2you"></a></h1>
+        <nav class="header__navigation">
+            <ul class="header__listContainer">
+                <li class="header__list"><a class="header__item" href="#">O nas</a></li>
+                <li class="header__list"><a class="header__item" href="#">Oferta</a>
+                    <ul class="header__list header__list--sublist">
+                        <li class="header__list header__list--subList"><a class="header__item" href="#">Dla Firm</a>
+                        </li>
+                        <li class="header__list header__list--subList"><a class="header__item" href="#">Dla osób
+                                prywatnych</a></li>
+                    </ul>
+                </li>
+                <li class="header__list"><a class="header__item" href="#">Kontakt</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section class="heroImg">
@@ -272,8 +277,12 @@
             </nav>
             <div class="">
                 <ul class="">
-                    <li class=""><p>E-mail:</p><a href=""></a></li>
-                    <li class=""><p>Numer tel.:</p><a href=""></a></li>
+                    <li class="">
+                        <p>E-mail:</p><a href=""></a>
+                    </li>
+                    <li class="">
+                        <p>Numer tel.:</p><a href=""></a>
+                    </li>
                 </ul>
             </div>
         </section>
