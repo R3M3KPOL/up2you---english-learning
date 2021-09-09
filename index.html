@@ -21,13 +21,24 @@
 
 <body>
     <header class="header">
-        <h1 class="header__title"><a class="header__img" href="#"><img src="/img/logo&heroImg/Logo.png"
-                    alt="logo firmy up2you"></a></h1>
-        <nav class="header__navigation">
+        <div class="header__container">
+            <h1 class="header__title"><a class="header__logo" href="#"><img class="header__img"
+                        src="/img/logo&heroImg/Logo.png" alt="logo firmy up2you"></a></h1>
+            <button class="hamburger">
+                <svg class="hamburger__menu" viewBox="0 0 100 100">
+                    <path class="hamburger__line hamburger__line1"
+                        d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                    <path class="hamburger__line hamburger__line2" d="M 20,50 H 80" />
+                    <path class="hamburger__line hamburger__line3"
+                        d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </svg>
+            </button>
+        </div>
+        <nav role="navigation" class="header__navigation">
             <ul class="header__listContainer">
                 <li class="header__list"><a class="header__item" href="#">O nas</a></li>
-                <li class="header__list"><a class="header__item" href="#">Oferta</a>
-                    <ul class="header__list header__list--sublist">
+                <li class="header__list header__list--second"><a class="header__item" href="#">Oferta</a>
+                    <ul class="header__listContainer header__listContainer--sublistOff">
                         <li class="header__list header__list--subList"><a class="header__item" href="#">Dla Firm</a>
                         </li>
                         <li class="header__list header__list--subList"><a class="header__item" href="#">Dla osób
@@ -40,203 +51,326 @@
     </header>
     <main>
         <section class="heroImg">
-            <div>
-                <div>
-                    <h2>Prywatne lekcje Online</h2>
-                    <p>Don't Miss out While You Are Away From School</p>
-                    <button><a href="#">About me</a></button>
+            <div class="heroImg__container">
+                <div class="heroImg__text">
+                    <h2 class="heroImg__title">Prywatne lekcje Online</h2>
+                    <p class="heroImg__paragraf">Don't Miss out While You Are Away From School</p>
+                    <button class="heroImg__btn">About me</button>
                 </div>
             </div>
-            <div><img src="./img/logo&heroImg/shutterstock_631946507.png" alt="teacher english"></div>
+            <div class="heroImg__box"><img class="heroImg__png"
+                    src="./img/logo&heroImg/shutterstock_631946507 small.png" alt="teacher english"></div>
         </section>
         <section class="courses">
-            <h2 class="courses__title">Wybierz Interesujący Cię kurs</h2>|
-            <div>
-                <h3>Angielski ogólny</h3>
-                <p>Kurs ten jest skierowany do osób poczatkujących lub
-                    <span>tych którzy chcą podnieść swój poziom językowy. Oferujemy kursy od
-                        A1- C2
-                        Głównym celem tego kursu jest poznanie języka uniwersalnego.
-                        Skupimy się tutaj na: nauce/poszerzaniu słownictwa, komunikacji, wymowie oraz gramatyce.</span>
-                </p>
-                <button></button>
-            </div>
-            <div>
-                <h3>Angielski Biznesowy</h3>
-                <p>Na tym kursie skupimy się na nauce oraz płynnym posługiwaniu się językiem specjalistycznym używanym w
-                    sytuacjach
-                    biznesowych.
-                    <span>Dzięki czemu zdobędziesz umiejętność profesjonalnego komunikowania się z partnerami
-                        zagranicznymi będziesz
-                        czul się pewnie w przygotowywaniu raportów, prezentacji w języku angielskim oraz będziesz
-                        potrafił w sposób naturalny
-                        reprezentować swoja firmę
-                        Zajęcia pokrywają tematykę z zakresu logistyka, HR, finanse, księgowość oraz handel i
-                        sprzedaż.</span>
-                </p>
-                <button></button>
-            </div>
-            <div>
-                <h3>Matura: przygotowanie do egzaminu</h3>
-                <p>Kurs ten jest przeznaczony dla osób które chcą przygotować się do egzaminów maturalnych z języka
-                    angielskiego.<span>Na
-                        zajęciach skupimy się na materiale wymaganym przez OKE tak żebyś czul się pewnie we wszystkich
-                        wymaganych zagadnieniach.
-                        Na zajęciach skupimy się na ćwiczeniu rozumienia ze słuchu poprzez zadania oparte na nagraniach
-                        z maturalnych, ale także
-                        na filmach z youtube czy podcastach. Będziemy również pracować nad rozumieniem z tekstu oraz
-                        pisaniem rozprawek oraz
-                        listów.</span></p>
-                <button></button>
-            </div>
-            <div>
-                <h3>Przygotowanie do egzaminów : FCE, CAE, IELTS</h3>
-                <p>Czy chcesz podjeść do B2 (FCE), C1 Advanced (CAE) , C2 Proficiency (CAE) lub egzaminu IELTS? Świetny
-                    pomysł!<span>Certyfikat
-                        potwierdzający umiejętności językowe w obecnym czasie jest bardzo pomocny a często nawet
-                        wymagany. Nasz kurs kompleksowo
-                        przygotuje Cię do wybranego przez Ciebie egzaminu.</span></p>
-                <button></button>
-            </div>
-            <div>
-                <h3>Angielski konwersacyjny</h3>
-                <p>Blokada Językowa?To coś dla ciebie!
-                    <span>Często pada zdanie ’’mam blokadę językowa’’ – kurs konwersacyjny pozwoli Ci się od niej
-                        uwolnić. Na zajęciach główny
-                        nacisk kładziemy na komunikacje oraz słownictwo, dzięki czemu będziesz swobodnie potrafił
-                        porozmawiać w języku
-                        angielskim na każdy temat.</span>
-                </p>
-                <button></button>
-            </div>
-            <div>
-                <h3>Angielski dla firm</h3>
-                <p>Kurs przeznaczony jest dla pracowników firm którzy chcieliby nauczyć się bądź podnieść swoje
-                    umiejętności językowe.
-                    <span>Oferujemy kursy z języka ogólnego lub specjalistycznego które skupiają się na języku
-                        angielskim związanym z
-                        rachunkowością i finansami, sprawami biznesowymi, handlem i sprzedażą logistyka oraz HR.</span>
-                </p>
-                <button></button>
-            </div>
-            <div>
-                <h3>Angielski medyczny</h3>
-                <p>Jest to kurs przeznaczony dla osób z branży medycznej, które w swojej pracy posługują się bądź
-                    chciałaby zacząć
-                    posługiwać się językiem angielskim.<span>Podczas kursu nauczysz się lub poprawisz znajomość języka
-                        angielskiego z zakresu
-                        zagadnień związanych z oraz przydatnych w branży medycznej.</span></p>
-                <button></button>
-            </div>
-            <div>
-                <h3>Angielski w prawie</h3>
-                <p>Jest to kurs przeznaczony dla osób które chciałby nauczyć się lub poprawić swoja znajomość języka z
-                    zakresu prawa tak
-                    aby moc kompetentnie wykorzystywać język prawniczy w swojej pracy.<span></span></p>
-                <button></button>
-            </div>
-            <div>
-                <h3>Skoncentrowane szybkie kursy</h3>
-                <p>Kursy te skierowane są do osób które chcą poznać zagadnienia oraz słownictwo w danym obszarze w
-                    szybkim czasie
-                    <span>. Obecnie
-                        dostępne kursy to:
-                        - Angielski w handlu i sprzedaży
-                        - Rozmowa o prace
-                        - Angielski w turystyce
-                        - Przygotowanie prezentacji
-                        - Jak pisać maile
-                        - Angielski w mechanice</span>
-                </p>
-                <button></button>
+
+            <h2 class="courses__title">Wybierz Interesujący Cię kurs</h2>
+            <div class="courses__ContainerGrid">
+                <div class="courses__box">
+                    <h3 class="courses__subTitle">Angielski ogólny</h3>
+                    <div class="courses__BoxImg"><img class="courses__item"
+                            src="./img/header section/shutterstock_425865217 - english eng.png" alt="">
+                    </div>
+                    <div class="courses__textBox">
+                        <p class="courses__text">Kurs ten jest skierowany do osób poczatkujących lub</p>
+                        <p class="courses__text courses__text--more">tych którzy chcą podnieść swój poziom językowy.
+                            Oferujemy kursy od
+                            A1- C2
+                            Głównym celem tego kursu jest poznanie języka uniwersalnego.
+                            Skupimy się tutaj na: nauce/poszerzaniu słownictwa, komunikacji, wymowie oraz
+                            gramatyce.
+                        </p>
+                        <button class="courses__btn">Więcej </button>
+                    </div>
+                </div>
+                <div class="courses__box">
+                    <h3 class="courses__subTitle">Angielski Biznesowy</h3>
+                    <div class="courses__BoxImg"><img class="courses__item"
+                            src="./img/header section/shutterstock_1059879905-business english.png" alt="">
+                    </div>
+                    <div class="courses__textBox">
+                        <p class="courses__text">Na tym kursie skupimy się na nauce oraz płynnym posługiwaniu się
+                            językiem
+                            specjalistycznym używanym w
+                            sytuacjach
+                            biznesowych.</p>
+                        <p class="courses__text courses__text--more">Dzięki czemu zdobędziesz umiejętność
+                            profesjonalnego komunikowania się
+                            z
+                            partnerami
+                            zagranicznymi będziesz
+                            czul się pewnie w przygotowywaniu raportów, prezentacji w języku angielskim oraz będziesz
+                            potrafił w sposób naturalny
+                            reprezentować swoja firmę
+                            Zajęcia pokrywają tematykę z zakresu logistyka, HR, finanse, księgowość oraz handel i
+                            sprzedaż.
+                        </p>
+                        <button class="courses__btn">Więcej</button>
+                    </div>
+                </div>
+                <div class="courses__box">
+                    <h3 class="courses__subTitle">Matura: przygotowanie do egzaminu</h3>
+                    <div class="courses__BoxImg"><img class="courses__item"
+                            src=" ./img/header section/shutterstock_315816179-egsam matura.png" alt="">
+                    </div>
+                    <div class="courses__textBox">
+                        <p class="courses__text">Kurs ten jest przeznaczony dla osób które chcą przygotować się do
+                            egzaminów
+                            maturalnych
+                            z języka
+                            angielskiego.</p>
+                        <p class="courses__text courses__text--more">Na
+                            zajęciach skupimy się na materiale wymaganym przez OKE tak żebyś czul się pewnie we
+                            wszystkich
+                            wymaganych zagadnieniach.
+                            Na zajęciach skupimy się na ćwiczeniu rozumienia ze słuchu poprzez zadania oparte na
+                            nagraniach
+                            z maturalnych, ale także
+                            na filmach z youtube czy podcastach. Będziemy również pracować nad rozumieniem z tekstu
+                            oraz
+                            pisaniem rozprawek oraz
+                            listów.
+                        </p>
+                        <button class="courses__btn">Więcej</button>
+                    </div>
+                </div>
+                <div class="courses__box">
+                    <h3 class="courses__subTitle">Przygotowanie do egzaminów : FCE, CAE, IELTS</h3>
+                    <div class="courses__BoxImg"><img class="courses__item"
+                            src="./img/header section/shutterstock_1038735148-egsam.png" alt="">
+                    </div>
+                    <div class="courses__textBox">
+                        <p class="courses__text">Czy chcesz podjeść do B2 (FCE), C1 Advanced (CAE) , C2 Proficiency
+                            (CAE) lub egzaminu
+                            IELTS? Świetny
+                            pomysł!</p>
+                        <p class="courses__text courses__text--more">Certyfikat
+                            potwierdzający umiejętności językowe w obecnym czasie jest bardzo pomocny a często nawet
+                            wymagany. Nasz kurs kompleksowo
+                            przygotuje Cię do wybranego przez Ciebie egzaminu.</p>
+                        <button class="courses__btn">Więcej</button>
+                    </div>
+                </div>
+                <div class="courses__box">
+                    <h3 class="courses__subTitle">Angielski konwersacyjny</h3>
+                    <div class="courses__BoxImg"><img class="courses__item"
+                            src="./img/header section/shutterstock_438870538-speak.png" alt="">
+                    </div>
+                    <div class="courses__textBox">
+                        <p class="courses__text">Blokada Językowa? To coś dla ciebie!</p>
+                        <p class="courses__text courses__text--more">Często pada zdanie ’’mam blokadę językowa’’ – kurs
+                            konwersacyjny
+                            pozwoli Ci
+                            się
+                            od niej
+                            uwolnić. Na zajęciach główny
+                            nacisk kładziemy na komunikacje oraz słownictwo, dzięki czemu będziesz swobodnie potrafił
+                            porozmawiać w języku
+                            angielskim na każdy temat.</p>
+                        <button class="courses__btn">Więcej</button>
+                    </div>
+                </div>
+
+                <div class="courses__box">
+                    <h3 class="courses__subTitle">Angielski dla firm</h3>
+                    <div class="courses__BoxImg"><img class="courses__item"
+                            src="./img/header section/shutterstock_1783943912-works eng.png" alt="">
+                    </div>
+                    <div class="courses__textBox">
+                        <p class="courses__text">Kurs przeznaczony jest dla pracowników firm którzy chcieliby nauczyć
+                            się
+                            bądź podnieść
+                            swoje
+                            umiejętności językowe.</p>
+                        <p class="courses__text courses__text--more">Oferujemy kursy z języka ogólnego lub
+                            specjalistycznego które skupiają
+                            się
+                            na
+                            języku
+                            angielskim związanym z
+                            rachunkowością i finansami, sprawami biznesowymi, handlem i sprzedażą logistyka oraz
+                            HR.</p>
+                        <button class="courses__btn">Więcej</button>
+                    </div>
+                </div>
+                <div class="courses__box">
+                    <h3 class="courses__subTitle">Angielski medyczny</h3>
+                    <div class="courses__BoxImg"><img class="courses__item"
+                            src="./img/header section/shutterstock_572969329- eng hospital.png" alt="">
+                    </div>
+                    <div class="courses__textBox">
+                        <p class="courses__text">Jest to kurs przeznaczony dla osób z branży medycznej, które w swojej
+                            pracy
+                            posługują
+                            się bądź
+                            chciałaby zacząć
+                            posługiwać się językiem angielskim.</p>
+                        <p class="courses__text courses__text--more">Podczas kursu nauczysz się lub poprawisz znajomość
+                            języka
+                            angielskiego z zakresu
+                            zagadnień związanych z oraz przydatnych w branży medycznej.</p>
+                        <button class="courses__btn">Więcej</button>
+                    </div>
+                </div>
+                <div class="courses__box">
+                    <h3 class="courses__subTitle">Angielski w prawie</h3>
+                    <div class="courses__BoxImg"><img class="courses__item"
+                            src="./img/header section/shutterstock_425865217 - english eng.png" alt="">
+                    </div>
+                    <div class="courses__textBox">
+                        <p class="courses__text">Jest to kurs przeznaczony dla osób które chciałby nauczyć się lub
+                            poprawić
+                            swoja
+                            znajomość języka z
+                            zakresu prawa tak
+                            aby moc kompetentnie wykorzystywać język prawniczy w swojej pracy.</p>
+                        <button class="courses__btn">Więcej</button>
+                    </div>
+                </div>
+                <div class="courses__box">
+                    <h3 class="courses__subTitle">Skoncentrowane szybkie kursy</h3>
+                    <div class="courses__BoxImg"><img class="courses__item"
+                            src="./img/header section/shutterstock_364699382 - english fast lesson.png" alt="">
+                    </div>
+                    <div class="courses__textBox">
+                        <p class="courses__text">Kursy te skierowane są do osób które chcą poznać zagadnienia oraz
+                            słownictwo w danym
+                            obszarze w
+                            szybkim czasie</p>
+                        <ul class="courses__text courses__text--more">. Obecnie
+                            dostępne kursy to:
+                            <li class="courses__textItem">- Angielski w handlu i sprzedaży</li>
+                            <li class="courses__textItem">- Rozmowa o prace</li>
+                            <li class="courses__textItem">- Angielski w turystyce</li>
+                            <li class="courses__textItem">- Przygotowanie prezentacji</li>
+                            <li class="courses__textItem">- Jak pisać maile</li>
+                            <li class="courses__textItem">- Angielski w mechanice</li>
+                        </ul>
+                        <button class="courses__btn">Więcej</button>
+                    </div>
+                </div>
             </div>
         </section>
 
 
-        <section>
-            <header>
-                <h2>Opinie</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam ratione, fuga praesentium
+        <section class="reviews">
+            <header class="reviews__header">
+                <h2 class="reviews__title">Opinie</h2>
+                <p class="reviews__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam ratione,
+                    fuga praesentium
                     molestias vitae enim voluptas nam voluptates aspernatur ducimus eius similique velit repellendus
                     illo voluptatum itaque. Ab, maxime laudantium!</p>
             </header>
-            <article>
-                <header>
-                    <img class="personImg" src="" alt="">
-                    <p class="fullname"></p>
-                    <div class="stars">
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
+            <article class="review">
+                <header class="review__header">
+                    <div class="review__box">
+                        <img class="review__personImg" src="./img/reviews person photo/image_6483441 (2).JPG" alt="">
+                        <p class="review__fullname">Miłosz - specjalista ds.</p>
+                        <div class="review__stars">
+                            <input type="radio" name="rate" class="review__input" id="rate-5">
+                            <label for="rate-5" class="review__star fas fa-star"></label>
+                            <input type="radio" name="rate" class="review__input" id="rate-4">
+                            <label for="rate-4" class="review__star fas fa-star"></label>
+                            <input type="radio" name="rate" class="review__input" id="rate-3">
+                            <label for="rate-3" class="review__star fas fa-star"></label>
+                            <input type="radio" name="rate" class="review__input" id="rate-2">
+                            <label for="rate-2" class="review__star fas fa-star"></label>
+                            <input type="radio" name="rate" class="review__input" id="rate-1">
+                            <label for="rate-1" class="review__star fas fa-star"></label>
+                            <!-- <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i> -->
+                        </div>
                     </div>
-                    <p class="comment"></p>
-                </header>
-                <header>
-                    <img class="personImg" src="" alt="">
-                    <p class="fullname"></p>
-                    <div class="stars">
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <p class="comment"></p>
-                </header>
-                <header>
-                    <img class="personImg" src="" alt="">
-                    <p class="fullname"></p>
-                    <div class="stars">
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <p class="comment"></p>
-                </header>
-                <header>
-                    <img class="personImg" src="" alt="">
-                    <p class="fullname"></p>
-                    <div class="stars">
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <p class="comment"></p>
-                </header>
-                <header>
-                    <img class="personImg" src="" alt="">
-                    <p class="fullname"></p>
-                    <div class="stars">
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <p class="comment"></p>
-                </header>
-                <header>
-                    <img class="personImg" src="" alt="">
-                    <p class="fullname"></p>
-                    <div class="stars">
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <p class="comment"></p>
+                    <p class="comment">Jestem bardzo zadowolony z tej szkoły ! Świetna atmosfera, materiał i poziom
+                        nauki dobrany dobrze do grupy, efekty
+                        nauki j. Angielskiego już po pierwszym miesiącu zachęcają i motywują do dalszej nauki.
+                        Milosz, Specjalista ds.
+                        logistyki</p>
                 </header>
             </article>
+            <article class="review">
+                <header class="review__header">
+                    <div class="review__box">
+                        <img class="review__personImg" src="./img/reviews person photo/image_6483441 (5).JPG" alt="">
+                        <p class="review__fullname"> Sylwia, Project manager</p>
+                        <div class="review__stars">
+                            <input type="radio" name="rate" class="review__input" id="rate-5">
+                            <label for="rate-5" class="review__star fas fa-star"></label>
+                            <input type="radio" name="rate" class="review__input" id="rate-4">
+                            <label for="rate-4" class="review__star fas fa-star"></label>
+                            <input type="radio" name="rate" class="review__input" id="rate-3">
+                            <label for="rate-3" class="review__star fas fa-star"></label>
+                            <input type="radio" name="rate" class="review__input" id="rate-2">
+                            <label for="rate-2" class="review__star fas fa-star"></label>
+                            <input type="radio" name="rate" class="review__input" id="rate-1">
+                            <label for="rate-1" class="review__star fas fa-star"></label>
+                            <!-- <i class="review__star  far fa-star"></i>
+                            <i class="review__star  far fa-star"></i>
+                            <i class="review__star  far fa-star"></i>
+                            <i class="review__star  far fa-star"></i>
+                            <i class="review__star  far fa-star"></i> -->
+                        </div>
+                    </div>
+                    <p class="comment">Zdecydowanie polecam! Już po kilku zajęciach przełamałam barierę językową , co
+                        było dla mnie bardzo ważne. Zajęcia są
+                        prowadzone z dużym zaangażowaniem i przede wszystkim nie są stresujące. Szybko zauważyłam
+                        postępy w nauce</p>
+                </header>
+            </article>
+            <!-- <header class="review__header">
+                    <img class="personImg" src="" alt="">
+                    <p class="fullname"></p>
+                    <div class="stars">
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="comment"></p>
+                </header>
+                <header class="review__header">
+                    <img class="personImg" src="" alt="">
+                    <p class="fullname"></p>
+                    <div class="stars">
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="comment"></p>
+                </header>
+                <header class="review__header">
+                    <img class="personImg" src="" alt="">
+                    <p class="fullname"></p>
+                    <div class="stars">
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="comment"></p>
+                </header>
+                <header class="review__header">
+                    <img class="personImg" src="" alt="">
+                    <p class="fullname"></p>
+                    <div class="stars">
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="comment"></p> -->
+            </header>
+
         </section>
     </main>
-    <footer>
+    <!-- <footer>
         <section class="">
             <header class="">
                 <img class="" src="" alt="">
@@ -286,8 +420,8 @@
                 </ul>
             </div>
         </section>
-    </footer>
-    <script src="/js/main.js"></script>
+    </footer> -->
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
