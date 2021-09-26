@@ -380,13 +380,15 @@
 
     &__modal {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
+        align-items: center;
         position: absolute;
         top: 50%;
         left: 50%;
         height: auto;
         min-height: 30rem;
-        width: 80rem;
+        width: 40rem;
         max-width: 120rem;
         padding: 2.5rem;
         transform: translate(-50%, -50%) scale(0);
@@ -410,7 +412,7 @@
         text-align: start;
         margin: 0 3rem;
         padding: 0 1.5rem;
-        border-left: 2px solid black;
+        border-top: 2px solid black;
     }
 
     &__close {
@@ -770,15 +772,27 @@
     .hamburger {
         display: none;
     }
-
-    .courses__item {
+.courses{
+    &__item {
         max-width: 45rem;
     }
 
-    .courses__title {
+    &__title {
         font-size: 2.8rem;
     }
 
+
+    &__modal {
+        flex-direction: row;
+        width: 80rem;
+        align-items: flex-start;
+    }
+    &__paragraph{
+        border-top: none;
+        border-left: 2px solid black;
+
+    }
+}
     .header {
         flex-direction: row;
         max-height: 8rem;
