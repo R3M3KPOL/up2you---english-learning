@@ -1,0 +1,180 @@
+@use 'header';
+@use 'footer';
+.bids {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bids__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 20rem;
+  margin: 5rem;
+}
+
+.bids__headingTitle {
+  font-size: 4rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.bids__text {
+  font-size: 1.5rem;
+  width: 100%;
+  max-width: 80rem;
+  line-height: 2rem;
+}
+
+.bids__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  max-height: 100%;
+}
+
+.bids__pictures {
+  height: 20rem;
+  width: 100%;
+  background-image: url(../img/OfferCard/Vector.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bids__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  width: 42rem;
+  height: 75rem;
+  margin: 0 3rem;
+  background-color: #fdf1e2;
+}
+
+.bids__overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+  border: 2px solid black;
+}
+
+.bids__title {
+  font-size: 3rem;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.bids__titleCost {
+  color: #000000;
+  font-size: 2.8rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.bids__desc {
+  font-size: 1.1rem;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.bids__list {
+  text-align: center;
+  margin: 2rem;
+  height: 20rem;
+}
+
+.bids__GeneralDesc {
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.bids__btn {
+  margin-top: 1rem;
+  text-transform: uppercase;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: white;
+  background: #F0004B;
+  border: 0.15rem solid #F0004B;
+  border-radius: 0.3rem;
+  -webkit-transition: background-color .3s ease-out,
+ border .3s ease-in-out,
+ color .2s ease-out;
+  transition: background-color .3s ease-out,
+ border .3s ease-in-out,
+ color .2s ease-out;
+  cursor: pointer;
+}
+
+.bids__btn:hover {
+  color: #F0004B;
+  background-color: white;
+  border: 0.15rem solid #F0004B;
+}
+
+.information {
+  max-height: 20rem;
+  height: 100%;
+  margin: 2rem;
+}
+
+.information__title {
+  font-size: 2rem;
+  padding: 0.4rem;
+}
+
+.information__item {
+  font-size: 1.5rem;
+  padding: 0.2rem;
+}
+
+.information .star {
+  font-size: 1.2rem;
+  color: #F0004B;
+  margin: 0.2rem;
+}
+/*# sourceMappingURL=offertsCompany.css.map */

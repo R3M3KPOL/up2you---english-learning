@@ -1,0 +1,140 @@
+@use 'header';
+@use 'footer';
+
+
+.bgcBox {
+    background-image: url(../img/contact/yellow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+.box-author {
+    height: 5rem;
+    margin: 1rem;
+    text-align: center;
+
+    &__createdby,
+    &__copy {
+        font-size: 1.6rem;
+
+    }
+
+}
+
+//aboutUs!
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15rem 0;
+    width: 100%;
+
+    &__content {
+        max-width: 1400px;
+        width: 100%;
+        padding: 2rem;
+        margin: 3rem;
+    }
+
+
+    &__heading {
+        font-size: 2.7rem;
+        text-align: center;
+        margin: 4rem 2rem;
+        border-bottom: 2px solid #F0004B;
+    }
+
+    &__title {
+        display: inline-block;
+        font-size: 2rem;
+        margin: 3.5rem 0;
+        border-bottom: 1px solid #f0004cad;
+    }
+
+    &__text,
+    &__item {
+        max-width: 110rem;
+        font-size: 1.6rem;
+        letter-spacing: 0.5px;
+        line-height: 2.2rem;
+    }
+
+    &__logo {
+        font-size: 1.7rem;
+        border-bottom: 1px solid #f0004b;
+        color: #23b1dd;
+    }
+}
+
+
+@media (min-width: 768px) {
+
+    .hamburger {
+        display: none;
+    }
+
+    .header {
+        flex-direction: row;
+        max-height: 8rem;
+
+        &__container {
+            box-shadow: none;
+        }
+
+        &__listContainer {
+            flex-direction: row;
+            justify-content: flex-end;
+
+            &--sublistOff {
+                flex-direction: column;
+                justify-content: flex-start;
+                background-color: #fff;
+            }
+        }
+
+        &__list {
+            padding: 1.5rem;
+        }
+
+        &__navigation {
+            transform: translateY(0);
+            height: auto;
+            font-size: 10rem;
+            text-transform: uppercase;
+
+        }
+    }
+
+
+    .footer__menu {
+        width: 50rem;
+        justify-content: space-between;
+    }
+
+    .contact {
+        flex-direction: row;
+
+        &__title {
+            margin: 0;
+        }
+
+        &__set {
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 920px) {
+    .footer__nav {
+        flex-direction: row;
+        margin: 3rem 0;
+    }
+}

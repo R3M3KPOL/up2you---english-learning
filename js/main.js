@@ -19,8 +19,11 @@ const navList = document.querySelector('.header__navigation');
 const listItem = document.querySelector('.header__list--second');
 const subList = document.querySelector('.header__listContainer--sublistOff');
 const body =document.querySelector('[data-body]')
-//btns for card
-const btns = Array.from(document.querySelectorAll('.courses__btn'))
+//btns for card - courses
+const btns = document.querySelectorAll('[data-btns]')
+const text = document.querySelector('[data-modal]')
+const closeBtns = document.querySelectorAll('[data-close]')
+
 
 btnItems.forEach((e) => {
     btn.addEventListener("click", () => {
@@ -44,17 +47,24 @@ subList.classList.toggle('header__listContainer--sublistOff--opened');
 })
 
 
-console.log(btns)
 
-const clicked = () => {
-    btns.forEach(button =>{
-        button.addEventListener('click', () =>{
-const card = button.previousElementSibling;
-card.classList.toggle('courses__text--show');
-        })
-    })
+btns.forEach(btnsOpen => {
+    btnsOpen.addEventListener('click', () =>{
+        const card = btnsOpen.nextElementSibling;
+card.classList.add('courses__overlay--active')
+if(card.classList.contains('courses__overlay--active'))
+{
+closeBtns.forEach(closeButton =>{
+    closeButton.addEventListener('click', () =>{
+     const closeCard = closeButton.closest('[data-modal]')
+    closeCard.classList.remove('courses__overlay--active')
+})
+})   
 }
-clicked()
+
+    })
+})
+
 
 //arrow slide
     btnRight.addEventListener('click', () =>{
