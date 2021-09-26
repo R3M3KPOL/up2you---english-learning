@@ -24,6 +24,8 @@
 .header {
     display: flex;
     flex-direction: column;
+    position: fixed;
+    height: 8rem;
     width: 100%;
     z-index: 10;
 
@@ -45,8 +47,6 @@
         flex-direction: column;
         height: 100vh;
         width: 100%;
-        position: fixed;
-        top: 8rem;
         font-size: 13.5rem;
         text-transform: uppercase;
         transition: transform 1s ease-in-out;
