@@ -1,0 +1,178 @@
+@use 'header';
+@use 'footer';
+
+
+.box-author {
+    height: 5rem;
+    padding: 1rem;
+    text-align: center;
+
+    &__createdby,
+    &__copy {
+        font-size: 1.6rem;
+
+    }
+
+}
+
+//aboutUs!
+
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15rem 0;
+    width: 100%;
+
+    &__content {
+        max-width: 100rem;
+        width: 100%;
+        padding: 2rem 0;
+    }
+
+    &__first {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100rem;
+        width: 100%;
+    }
+
+    &__photo {
+        max-height: 35rem;
+    }
+
+
+
+    &__heading {
+        font-size: 2.4rem;
+        text-align: center;
+        margin: 4rem 2rem;
+    }
+
+    &__title {
+        display: inline-block;
+        font-size: 2rem;
+        margin: 3.5rem 0;
+        padding: 2rem;
+    }
+
+    &__text,
+    &__item {
+        max-width: 110rem;
+        font-size: 1.6rem;
+        letter-spacing: 0.5px;
+        line-height: 1.6;
+        padding: 2rem;
+
+        &--width {
+            max-width: 50rem;
+            font-size: 1.8rem;
+        }
+    }
+
+
+}
+
+@media (min-width: 480px) {
+    .about {
+
+        &__text,
+        &__item {
+            line-height: 2;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+
+    .hamburger {
+        display: none;
+    }
+
+    .header {
+        flex-direction: row;
+        max-height: 8rem;
+
+        &__container {
+            box-shadow: none;
+        }
+
+        &__listContainer {
+            flex-direction: row;
+            justify-content: flex-end;
+
+            &--sublistOff {
+                flex-direction: column;
+                justify-content: flex-start;
+                background-color: #fff;
+            }
+        }
+
+        &__list {
+            padding: 1.5rem;
+        }
+
+        &__navigation {
+            transform: translateY(0);
+            height: auto;
+            font-size: 10rem;
+            text-transform: uppercase;
+
+        }
+    }
+
+
+    .footer__menu {
+        width: 50rem;
+        justify-content: space-between;
+    }
+
+    .contact {
+        flex-direction: row;
+
+        &__title {
+            margin: 0;
+        }
+
+        &__set {
+            width: 100%;
+        }
+    }
+
+    .about {
+        &__first {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: none;
+        }
+
+        &__photo {
+            max-height: 55rem;
+        }
+
+        &__heading {
+            font-size: 3rem;
+        }
+
+        &__title {
+            font-size: 2.4rem;
+        }
+
+        &__text,
+        &__item {
+            font-size: 2rem;
+
+        }
+
+    }
+
+}
+
+@media (min-width: 920px) {
+    .footer__nav {
+        flex-direction: row;
+    }
+}

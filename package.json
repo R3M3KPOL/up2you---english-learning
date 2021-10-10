@@ -1,0 +1,14 @@
+{
+  "name": "daria-beldzik",
+  "version": "1.0.0",
+  "description": "daria beldzik język angielski, szkoła",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Remigiusz Kapelczak",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}

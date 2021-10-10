@@ -12,8 +12,9 @@
 
 //mobile first!!!
 .body {
-    font-family: 'Signika Negative',
-        'sans-serif';
+
+font-family: 'Noto Sans Display',
+sans-serif;
 
     &__blockedScroll {
         overflow: hidden;
@@ -195,8 +196,9 @@
 
     &__container {
         display: flex;
-        align-items: center;
-        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
         height: 100%;
         max-width: 1600px;
         margin: 0 auto;
@@ -208,6 +210,7 @@
     &__text {
         display: flex;
         flex-direction: column;
+        align-items: space-around;
         position: relative;
         right: 0;
         bottom: -25rem;
@@ -219,6 +222,7 @@
         font-size: 1.7rem;
         max-width: 150px;
         padding: 0.5em;
+        margin: 2rem;
         background: #F0004B;
         border: 1px solid #F0004B;
         cursor: pointer;
@@ -235,9 +239,25 @@
     }
 
     &__title {
+        display: flex;
+        flex-direction: column;
         font-size: 2.5rem;
-        text-transform: uppercase;
     }
+
+    &__space {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 2.1rem;
+    }
+
+    &__title,
+    &__space {
+        text-transform: uppercase;
+        margin: 2rem 0;
+        height: 100%;
+    }
+
 
     &__title,
     &__paragraf {
@@ -273,13 +293,6 @@
         position: relative;
     }
 
-    // &__box {
-    //     display: flex;
-    //     align-items: center;
-    //     flex-direction: column;
-    //     position: relative;
-
-    // }
 
     &__title {
         font-size: 2.5rem;
@@ -308,30 +321,6 @@
         padding: 1rem;
     }
 
-    // &__text {
-    //     position: relative;
-    //     max-width: 40rem;
-    //     font-size: 1.6rem;
-    //     line-height: 140%;
-    //     padding: 1em;
-
-    //     &::after {
-    //         content: '';
-    //         height: 100%;
-    //         width: 100%;
-    //         position: absolute;
-    //         inset: 0;
-    //         background-image: linear-gradient(transparent, white 60%);
-    //         opacity: 1;
-    //         transition: opacity 0.7s;
-    //     }
-
-    //     &--show {
-    //         &::after {
-    //             opacity: 0;
-    //         }
-    //     }
-    // }
 
     &__btn {
         width: 15rem;
@@ -367,7 +356,7 @@
         bottom: 0;
         height: 100%;
         width: 100%;
-        background-color: #f0004ca6;
+        background-color: #000000a6;
         opacity: 0;
         pointer-events: none;
         z-index: 50;
@@ -469,7 +458,7 @@
 
     &__itemContainer {
         display: grid;
-        grid-template-columns: repeat(6, 75rem);
+        grid-template-columns: repeat(8, 75rem);
 
     }
 
@@ -544,7 +533,7 @@
 
 // background-color for body(section footer)
 .bgcBox {
-    background-image: url(../img/contact/blue.png);
+    background-image: url(../img/contact/backgroundBlue.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -563,6 +552,7 @@
         justify-content: space-evenly;
         width: 100%;
         align-items: center;
+        background-color: #82defb;
     }
 
     &__img {
@@ -600,8 +590,8 @@
 .contact {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 5rem 0;
+    justify-content: space-between;
+    margin: 0 auto;
 
     &__box {
         display: flex;
@@ -613,7 +603,7 @@
 
     &__title {
         font-size: 2.3rem;
-        max-width: 50rem;
+        max-width: 27rem;
         width: 100%;
         margin: 1.5rem 0;
         padding: 2rem;
@@ -637,7 +627,6 @@
     }
 
     &__set {
-        border: 1px solid #F0004B;
         margin: 2rem;
         padding: 1rem;
         max-width: 50rem;
@@ -652,7 +641,7 @@
         display: flex;
         flex-direction: column;
         position: relative;
-        width: 30rem;
+        width: 100%;
         font-size: 3.9rem;
 
         &-input,
@@ -746,8 +735,8 @@
 
 .box-author {
     height: 5rem;
-    margin: 1rem;
     text-align: center;
+    background-color: #82defb;
 
     &__createdby,
     &__copy {
@@ -772,27 +761,30 @@
     .hamburger {
         display: none;
     }
-.courses{
-    &__item {
-        max-width: 45rem;
+
+    .courses {
+        &__item {
+            max-width: 45rem;
+        }
+
+        &__title {
+            font-size: 2.8rem;
+        }
+
+
+        &__modal {
+            flex-direction: row;
+            width: 80rem;
+            align-items: flex-start;
+        }
+
+        &__paragraph {
+            border-top: none;
+            border-left: 2px solid black;
+
+        }
     }
 
-    &__title {
-        font-size: 2.8rem;
-    }
-
-
-    &__modal {
-        flex-direction: row;
-        width: 80rem;
-        align-items: flex-start;
-    }
-    &__paragraph{
-        border-top: none;
-        border-left: 2px solid black;
-
-    }
-}
     .header {
         flex-direction: row;
         max-height: 8rem;
@@ -834,7 +826,7 @@
             position: static;
             background: transparent;
             justify-content: space-between;
-            height: 30rem;
+            height: 40rem;
             max-width: 22%;
         }
     }
@@ -848,7 +840,6 @@
         }
 
         &__wrap {
-            position: static;
             width: auto;
 
         }
@@ -858,23 +849,9 @@
         }
 
         &__cont {
-            position: static;
-            overflow: initial;
-            width: 100%;
+            width: 150rem;
         }
 
-        &__itemContainer {
-            grid-template-columns: repeat(auto-fit, minmax(15rem, 45rem));
-            justify-content: center;
-            grid-gap: 10rem 5rem;
-        }
-
-    }
-
-    .reviews__cont {
-        .fa {
-            display: none;
-        }
     }
 
     .footer__menu {
@@ -884,6 +861,7 @@
 
     .contact {
         flex-direction: row;
+        max-width: 110rem;
 
         &__title {
             margin: 0;
@@ -898,6 +876,6 @@
 @media (min-width: 920px) {
     .footer__nav {
         flex-direction: row;
-        margin: 3rem 0;
+
     }
 }

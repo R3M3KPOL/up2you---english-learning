@@ -52,6 +52,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 4rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   min-height: 100vh;
   max-height: 100%;
 }
@@ -78,8 +84,8 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  width: 42rem;
-  height: 75rem;
+  width: 40rem;
+  height: 72rem;
   margin: 0 3rem;
   background-color: #fdf1e2;
 }
@@ -96,6 +102,8 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 2rem;
+  width: 32rem;
+  height: 69rem;
   border: 2px solid black;
 }
 
@@ -141,12 +149,8 @@
   background: #F0004B;
   border: 0.15rem solid #F0004B;
   border-radius: 0.3rem;
-  -webkit-transition: background-color .3s ease-out,
- border .3s ease-in-out,
- color .2s ease-out;
-  transition: background-color .3s ease-out,
- border .3s ease-in-out,
- color .2s ease-out;
+  -webkit-transition: background-color .3s ease-out, border .3s ease-in-out, color .2s ease-out;
+  transition: background-color .3s ease-out, border .3s ease-in-out, color .2s ease-out;
   cursor: pointer;
 }
 

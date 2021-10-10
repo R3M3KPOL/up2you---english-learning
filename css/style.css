@@ -11,7 +11,7 @@
 }
 
 .body {
-  font-family: 'Signika Negative', 'sans-serif';
+  font-family: 'Noto Sans Display', sans-serif;
 }
 
 .body__blockedScroll {
@@ -216,13 +216,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100%;
   max-width: 1600px;
   margin: 0 auto;
@@ -239,6 +242,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
   position: relative;
   right: 0;
   bottom: -25rem;
@@ -250,6 +256,7 @@
   font-size: 1.7rem;
   max-width: 150px;
   padding: 0.5em;
+  margin: 2rem;
   background: #F0004B;
   border: 1px solid #F0004B;
   cursor: pointer;
@@ -265,8 +272,34 @@
 }
 
 .heroImg__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-size: 2.5rem;
+}
+
+.heroImg__space {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2.1rem;
+}
+
+.heroImg__title, .heroImg__space {
   text-transform: uppercase;
+  margin: 2rem 0;
+  height: 100%;
 }
 
 .heroImg__title, .heroImg__paragraf {
@@ -372,7 +405,7 @@
   bottom: 0;
   height: 100%;
   width: 100%;
-  background-color: #f0004ca6;
+  background-color: #000000a6;
   opacity: 0;
   pointer-events: none;
   z-index: 50;
@@ -498,8 +531,8 @@
 .reviews__itemContainer {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (75rem)[6];
-      grid-template-columns: repeat(6, 75rem);
+  -ms-grid-columns: (75rem)[8];
+      grid-template-columns: repeat(8, 75rem);
 }
 
 .reviews__item {
@@ -574,7 +607,7 @@
 }
 
 .bgcBox {
-  background-image: url(../img/contact/blue.png);
+  background-image: url(../img/contact/backgroundBlue.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -605,6 +638,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #82defb;
 }
 
 .footer__img {
@@ -647,10 +681,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 5rem 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
 }
 
 .contact__box {
@@ -672,7 +706,7 @@
 
 .contact__title {
   font-size: 2.3rem;
-  max-width: 50rem;
+  max-width: 27rem;
   width: 100%;
   margin: 1.5rem 0;
   padding: 2rem;
@@ -696,7 +730,6 @@
 }
 
 .contact__set {
-  border: 1px solid #F0004B;
   margin: 2rem;
   padding: 1rem;
   max-width: 50rem;
@@ -721,7 +754,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  width: 30rem;
+  width: 100%;
   font-size: 3.9rem;
 }
 
@@ -807,8 +840,8 @@
 
 .box-author {
   height: 5rem;
-  margin: 1rem;
   text-align: center;
+  background-color: #82defb;
 }
 
 .box-author__createdby, .box-author__copy {
@@ -894,7 +927,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    height: 30rem;
+    height: 40rem;
     max-width: 22%;
   }
   .reviews__title {
@@ -902,27 +935,13 @@
     text-transform: uppercase;
   }
   .reviews__wrap {
-    position: static;
     width: auto;
   }
   .reviews__item {
     padding: 2.5rem;
   }
   .reviews__cont {
-    position: static;
-    overflow: initial;
-    width: 100%;
-  }
-  .reviews__itemContainer {
-    -ms-grid-columns: (minmax(15rem, 45rem))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(15rem, 45rem));
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    grid-gap: 10rem 5rem;
-  }
-  .reviews__cont .fa {
-    display: none;
+    width: 150rem;
   }
   .footer__menu {
     width: 50rem;
@@ -935,6 +954,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    max-width: 110rem;
   }
   .contact__title {
     margin: 0;
@@ -950,7 +970,6 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin: 3rem 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

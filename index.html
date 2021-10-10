@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;600&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200;300;400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./css/style.css">
     <title>up2you</title>
     <meta name="description"
         content="Nauka języka Angielskiego z native speakerem - dla początkujących, średniozaawansowanych, zaawansowanych. ">
@@ -33,16 +32,19 @@
                     <path class="hamburger__line hamburger__line3"
                         d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
                 </svg>
+            </button>
         </div>
-        </button>
+
         <nav role="navigation" class="header__navigation">
             <ul class="header__listContainer">
                 <li class="header__list"><a class="header__item" href="aboutUs.html">O nas</a></li>
                 <li class="header__list header__list--second"><a class="header__item" href="#">Oferta</a>
                     <ul class="header__listContainer header__listContainer--sublistOff">
-                        <li class="header__list header__list--subList"><a class="header__item" href="offertsCompany.html">Dla Firm</a>
+                        <li class="header__list header__list--subList"><a class="header__item"
+                                href="offertsCompany.html">Dla Firm</a>
                         </li>
-                        <li class="header__list header__list--subList"><a class="header__item" href="offerts.html">Dla osób
+                        <li class="header__list header__list--subList"><a class="header__item" href="offerts.html">Dla
+                                osób
                                 prywatnych</a></li>
                     </ul>
                 </li>
@@ -56,10 +58,12 @@
         <section class="heroImg ">
             <div class="heroImg__container">
                 <div class="heroImg__text">
-                    <h2 class="heroImg__title">Prywatne lekcje Online - naucz się języka bez wychodzenia z domu!</h2>
-
-                    <button class="heroImg__btn" >About me</button>
+                    <h2 class="heroImg__title">Prywatne lekcje Online - naucz się języka bez wychodzenia z domu!
+                        <span class="heroImg__space">oraz</span>
+                        Zajęcia dla firm z dojazdem do klienta
+                    </h2>
                 </div>
+                <button class="heroImg__btn">About me</button>
             </div>
         </section>
 
@@ -69,11 +73,11 @@
             <div class="courses__grid">
                 <div class="courses__container">
                     <h3 class="courses__subTitle">Angielski ogólny</h3>
-                    <div class="courses__boxImg"><img class="courses__item" src="./img/header section/london.png" alt="">
+                    <div class="courses__boxImg"><img class="courses__item" src="./img/header section/london.png"
+                            alt="">
                     </div>
                     <button data-btns class="courses__btn">szczegóły...</button>
-                    <!-- <div class="courses__textBox">
-                        </div> -->
+
                     <section data-modal class="courses__overlay">
                         <article class="courses__modal courses__modal--active">
                             <h3 class="courses__titleModal">Angielski ogólny</h3>
@@ -86,7 +90,7 @@
                                     Głównym celem tego kursu jest poznanie języka uniwersalnego.
                                     Skupimy się tutaj na: nauce/poszerzaniu słownictwa, komunikacji, wymowie oraz
                                     gramatyce.
-        
+
                                 </p>
                             </div>
                             <button data-close class="courses__close"><i class="fas fa-times"></i></button>
@@ -95,16 +99,17 @@
                 </div>
                 <div class="courses__container">
                     <h3 class="courses__subTitle">Angielski biznesowy</h3>
-                    <div class="courses__boxImg"><img class="courses__item" src="./img/header section/business.png" alt="">
+                    <div class="courses__boxImg"><img class="courses__item" src="./img/header section/business.png"
+                            alt="">
                     </div>
                     <button data-btns class="courses__btn">szczegóły...</button>
-                    <!-- <div class="courses__textBox">
-                        </div> -->
+
                     <section data-modal class="courses__overlay">
                         <article class="courses__modal courses__modal--active">
                             <h3 class="courses__titleModal">Angielski biznesowy</h3>
                             <div class="courses__text">
-                                <p class="courses__paragraph">Na tym kursie skupimy się na nauce oraz płynnym posługiwaniu
+                                <p class="courses__paragraph">Na tym kursie skupimy się na nauce oraz płynnym
+                                    posługiwaniu
                                     się
                                     językiem
                                     specjalistycznym używanym w
@@ -119,7 +124,8 @@
                                     będziesz
                                     potrafił w sposób naturalny
                                     reprezentować swoja firmę
-                                    Zajęcia pokrywają tematykę z zakresu logistyka, HR, finanse, księgowość oraz handel i
+                                    Zajęcia pokrywają tematykę z zakresu logistyka, HR, finanse, księgowość oraz handel
+                                    i
                                     sprzedaż.
                                 </p>
                             </div>
@@ -129,17 +135,18 @@
                 </div>
                 <div class="courses__container">
                     <h3 class="courses__subTitle">Matura: przygotowanie do egzaminu</h3>
-        
-                    <div class="courses__boxImg"><img class="courses__item" src="./img/header section/matura.png" alt="">
+
+                    <div class="courses__boxImg"><img class="courses__item" src="./img/header section/matura.png"
+                            alt="">
                     </div>
                     <button data-btns class="courses__btn">szczegóły...</button>
-                    <!-- <div class="courses__textBox">
-                        </div> -->
+
                     <section data-modal class="courses__overlay">
                         <article class="courses__modal courses__modal--active">
                             <h3 class="courses__titleModal">Matura: przygotowanie do egzaminu</h3>
                             <div class="courses__text">
-                                <p class="courses__paragraph">Kurs ten jest przeznaczony dla osób które chcą przygotować się
+                                <p class="courses__paragraph">Kurs ten jest przeznaczony dla osób które chcą przygotować
+                                    się
                                     do
                                     egzaminów
                                     maturalnych
@@ -152,7 +159,8 @@
                                     Na zajęciach skupimy się na ćwiczeniu rozumienia ze słuchu poprzez zadania oparte na
                                     nagraniach
                                     z maturalnych, ale także
-                                    na filmach z youtube czy podcastach. Będziemy również pracować nad rozumieniem z tekstu
+                                    na filmach z youtube czy podcastach. Będziemy również pracować nad rozumieniem z
+                                    tekstu
                                     oraz
                                     pisaniem rozprawek oraz
                                     listów.
@@ -163,13 +171,12 @@
                     </section>
                 </div>
                 <div class="courses__container">
-        
+
                     <h3 class="courses__subTitle">Przygotowanie do egzaminów : FCE, CAE, IELTS</h3>
                     <div class="courses__boxImg"><img class="courses__item" src="./img/header section/test.png" alt="">
                     </div>
                     <button data-btns class="courses__btn">szczegóły...</button>
-                    <!-- <div class="courses__textBox">
-                        </div> -->
+
                     <section data-modal class="courses__overlay">
                         <article class="courses__modal courses__modal--active">
                             <h3 class="courses__titleModal">Przygotowanie do egzaminów : FCE, CAE, IELTS</h3>
@@ -180,7 +187,8 @@
                                     IELTS? Świetny
                                     pomysł!
                                     Certyfikat
-                                    potwierdzający umiejętności językowe w obecnym czasie jest bardzo pomocny a często nawet
+                                    potwierdzający umiejętności językowe w obecnym czasie jest bardzo pomocny a często
+                                    nawet
                                     wymagany. Nasz kurs kompleksowo
                                     przygotuje Cię do wybranego przez Ciebie egzaminu.</p>
                             </div>
@@ -190,11 +198,11 @@
                 </div>
                 <div class="courses__container">
                     <h3 class="courses__subTitle">Angielski konwersacyjny</h3>
-                    <div class="courses__boxImg"><img class="courses__item" src="./img/header section/conversation.png" alt="">
+                    <div class="courses__boxImg"><img class="courses__item" src="./img/header section/conversation.png"
+                            alt="">
                     </div>
                     <button data-btns class="courses__btn">szczegóły...</button>
-                    <!-- <div class="courses__textBox">
-           </div> -->
+
                     <section data-modal class="courses__overlay">
                         <article class="courses__modal courses__modal--active">
                             <h3 class="courses__titleModal">Angielski konwersacyjny</h3>
@@ -221,13 +229,13 @@
                     <div class="courses__boxImg"><img class="courses__item" src="./img/header section/team.png" alt="">
                     </div>
                     <button data-btns class="courses__btn">szczegóły...</button>
-                    <!-- <div class="courses__textBox">
-           </div> -->
+
                     <section data-modal class="courses__overlay">
                         <article class="courses__modal courses__modal--active">
                             <h3 class="courses__titleModal">Angielski dla firm</h3>
                             <div class="courses__text">
-                                <p class="courses__paragraph">Kurs przeznaczony jest dla pracowników firm którzy chcieliby
+                                <p class="courses__paragraph">Kurs przeznaczony jest dla pracowników firm którzy
+                                    chcieliby
                                     nauczyć
                                     się
                                     bądź podnieść
@@ -248,16 +256,17 @@
                 </div>
                 <div class="courses__container">
                     <h3 class="courses__subTitle">Angielski medyczny</h3>
-                    <div class="courses__boxImg"><img class="courses__item" src="./img/header section/doctor.png" alt="">
+                    <div class="courses__boxImg"><img class="courses__item" src="./img/header section/doctor.png"
+                            alt="">
                     </div>
                     <button data-btns class="courses__btn">szczegóły...</button>
-                    <!-- <div class="courses__textBox">
-          </div> -->
+
                     <section data-modal class="courses__overlay">
                         <article class="courses__modal courses__modal--active">
                             <h3 class="courses__titleModal">Angielski medyczny</h3>
                             <div class="courses__text">
-                                <p class="courses__paragraph">Jest to kurs przeznaczony dla osób z branży medycznej, które w
+                                <p class="courses__paragraph">Jest to kurs przeznaczony dla osób z branży medycznej,
+                                    które w
                                     swojej
                                     pracy
                                     posługują
@@ -279,8 +288,7 @@
                     <div class="courses__boxImg"><img class="courses__item" src="./img/header section/law.png" alt="">
                     </div>
                     <button data-btns class="courses__btn">szczegóły...</button>
-                    <!-- <div class="courses__textBox">
-          </div> -->
+
                     <section data-modal class="courses__overlay">
                         <article class="courses__modal courses__modal--active">
                             <h3 class="courses__titleModal">Angielski w prawie</h3>
@@ -304,12 +312,13 @@
                     <div class="courses__boxImg"><img class="courses__item" src="./img/header section/time.png" alt="">
                     </div>
                     <button data-btns class="courses__btn">szczegóły...</button>
-                    <!-- <div class="courses__textBox">   </div> -->
+
                     <section data-modal class="courses__overlay">
                         <article class="courses__modal courses__modal--active">
                             <h3 class="courses__titleModal">Skoncentrowane szybkie kursy</h3>
-        
-                            <ul class="courses__paragraph">Kursy te skierowane są do osób które chcą poznać zagadnienia oraz
+
+                            <ul class="courses__paragraph">Kursy te skierowane są do osób które chcą poznać zagadnienia
+                                oraz
                                 słownictwo w danym
                                 obszarze w
                                 szybkim czasie.
@@ -322,15 +331,13 @@
                                 <li class="courses__textItem">- Jak pisać maile</li>
                                 <li class="courses__textItem">- Angielski w mechanice</li>
                             </ul>
-        
+
                             <button data-close class="courses__close"><i class="fas fa-times"></i></button>
                         </article>
                     </section>
                 </div>
             </div>
-            </div>
         </section>
-
         <!-- reviews section -->
         <section class="reviews">
             <h2 class="reviews__title">Opinie</h2>
@@ -338,10 +345,28 @@
                 <div class="reviews__cont">
                     <button data-arrow data-arrow-left class="arrow arrow__left fa fa-chevron-left"></button>
                     <button data-arrow data-arrow-right class="arrow arrow__right fa fa-chevron-right"></button>
-                    <article data-itemContainer class="reviews__itemContainer">
-                        <header data-item data-firstitem class="reviews__item">
+                    <article data-itemcontainer class="reviews__itemContainer">
+                        <header data-item id="last" class="reviews__item">
                             <div class="reviews__boxImg"><img class="reviews__img"
-                                    src="./img/reviews person photo/image_6483441 (1).JPG" alt=""></div>
+                                    src="./img/reviews person photo/Justyna.jpg" alt="Justyna - ratownik medyczny">
+                            </div>
+                            <div class="reviews__boxText">
+                                <h3>Justyna - Ratownik Medyczny</h3>
+                                <p>Mimo mojej blokady językowej zauważam postępy w nauce a lekcje są dla mnie miłą
+                                    przerwą od codziennych obowiązków.
+                                    Wykorzystuję tą wiedzę nie tylko na wakacjach zagranicznych ale również w pracy
+                                    zawodowej.
+                                    Zajecia tutaj prowadzone motywuja do działania za co bardzo jestem wdzięczna. Lekcje
+                                    sa prowadzone z pasją i entuzjazmem
+                                    a lektor dokłada wszelkich starań by przybliżyć różne kwestie bądź rozwiązać
+                                    wątpliwości. Potrafi dostosować się do
+                                    poziomu wiedzy ale tez sukcesywnie podwyzsza poprzeczke.
+                                </p>
+                            </div>
+                        </header>
+                        <header data-item class="reviews__item">
+                            <div class="reviews__boxImg"><img class="reviews__img"
+                                    src="./img/reviews person photo/Diana.jpg" alt="Diana - pracownik biurowy"></div>
                             <div class="reviews__boxText">
                                 <h3>Diana - Administracja biurowa</h3>
                                 <p>Lektorka z dużą cierpliwością i kreatywnością w przekazywanej wiedzy.
@@ -352,7 +377,8 @@
 
                         <header data-item class="reviews__item">
                             <div class="reviews__boxImg"><img class="reviews__img"
-                                    src="./img/reviews person photo/image_6483441 (2).JPG" alt=""></div>
+                                    src="./img/reviews person photo/Milosz.jpg"
+                                    alt="Miłosz - specjalista do spraw logistyki"></div>
                             <div class="reviews__boxText">
                                 <h3>Milosz - Specjalista ds. logistyki</h3>
                                 <p>Jestem bardzo zadowolony z tej szkoły ! Świetna atmosfera, materiał i poziom nauki
@@ -364,7 +390,7 @@
                         </header>
                         <header data-item class="reviews__item">
                             <div class="reviews__boxImg"><img class="reviews__img"
-                                    src="./img/reviews person photo/image_6483441 (3).JPG" alt=""></div>
+                                    src="./img/reviews person photo/Sylwia.jpg" alt="Sylwia - project menadżer"></div>
                             <div class="reviews__boxText">
                                 <h3>Sylwia - Project manager</h3>
                                 <p>Zdecydowanie polecam! Już po kilku zajęciach przełamałam barierę językową , co było
@@ -376,7 +402,7 @@
                         </header>
                         <header data-item class="reviews__item">
                             <div class="reviews__boxImg"><img class="reviews__img"
-                                    src="./img/reviews person photo/image_6483441 (4).JPG" alt=""></div>
+                                    src="./img/reviews person photo/Ola(2).JPG" alt="Ola - Kucharz"></div>
                             <div class="reviews__boxText">
                                 <h3>Aleksandra - Kucharz</h3>
                                 <p>Naukę języka angielskiego zaczęłam rok temu. Potrzebowałam jej ponieważ pracuje w
@@ -400,7 +426,8 @@
                         </header>
                         <header data-item class="reviews__item">
                             <div class="reviews__boxImg"><img class="reviews__img"
-                                    src="./img/reviews person photo/image_6483441 (5).JPG" alt=""></div>
+                                    src="./img/reviews person photo/Justyna.jpg" alt="Justyna - ratownik medyczny">
+                            </div>
                             <div class="reviews__boxText">
                                 <h3>Justyna - Ratownik Medyczny</h3>
                                 <p>Mimo mojej blokady językowej zauważam postępy w nauce a lekcje są dla mnie miłą
@@ -415,15 +442,25 @@
                                 </p>
                             </div>
                         </header>
-                        <header data-item data-lastitem class="reviews__item">
+                        <header data-item class="reviews__item">
                             <div class="reviews__boxImg"><img class="reviews__img"
-                                    src="./img/reviews person photo/IMG_8423 (1).png" alt=""></div>
+                                    src="./img/reviews person photo/Ola.jpg" alt="Ola - maturzystka"></div>
                             <div class="reviews__boxText">
                                 <h3>Ola - Maturzystka</h3>
                                 <p>Przygotowywałam się z up2you do matury z jezyka angielskiego. Super podejście do
                                     ucznia. Wiele wyniosłam z naszych
                                     lekcji. Polecam serdecznie. Ola, Maturzystka
                                 </p>
+                            </div>
+                        </header>
+                        <header data-item id="first" class="reviews__item">
+                            <div class="reviews__boxImg"><img class="reviews__img"
+                                    src="./img/reviews person photo/Diana.jpg" alt="Diana - pracownik biurowy"></div>
+                            <div class="reviews__boxText">
+                                <h3>Diana - Administracja biurowa</h3>
+                                <p>Lektorka z dużą cierpliwością i kreatywnością w przekazywanej wiedzy.
+                                    Profesjonalna, z indywidualnym podejściem
+                                    do ucznia. Na lekcjach zawsze panuje miła atmosfera</p>
                             </div>
                         </header>
                     </article>
@@ -434,16 +471,16 @@
     </main>
     <!-- footer section, contact section -->
     <footer id="contact" class="footer">
-        <h2 class="courses__title">KONTAKT</h2>
+
         <div class="bgcBox">
             <section class="contact">
                 <header class="contact__box">
-                    <h2 class="contact__title">Skontaktuj się ze mną i zacznijmy razem współprace!</h2>
+                    <h2 class="contact__title">Masz pytania? Skontaktuj się z nami !</h2>
                     <p class="contact__text"></p>
                     <div class="contact__img"></div>
                 </header>
-                <fieldset class="contact__set">
-                    <legend class="contact__title contact__title--subtitle">Formularz Kontaktowy</legend>
+                <section class="contact__set">
+                    <h2 class="contact__title contact__title--subtitle">Formularz Kontaktowy</h2>
                     <form class="contact__mail" method="POST" action="">
                         <div class="contact__form">
                             <input class="contact__form-input" type="text" name="name" autocomplete="off" required>
@@ -458,13 +495,13 @@
                         </div>
                         <div class="contact__form contact__form--third">
                             <textarea data-msg class="contact__form-message" name="content" autocomplete="off" required
-                                cols="30" rows="10"></textarea>
+                                cols="30" rows="15"></textarea>
                             <label class="contact__label contact__label--third" for="content"><span
                                     class="contact__name contact__name--message">Wiadomość:</span></label>
                         </div>
                         <button class="contact__btn">Wyślij</button>
                     </form>
-                </fieldset>
+                </section>
             </section>
             <section class="footer__nav">
                 <div class="footer__img"></div>

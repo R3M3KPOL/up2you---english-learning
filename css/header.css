@@ -1,0 +1,209 @@
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-size: 62.5%;
+}
+
+.body {
+  font-family: 'Noto Sans Display', sans-serif;
+}
+
+.body__blockedScroll {
+  overflow: hidden;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  height: 8rem;
+  width: 100%;
+  z-index: 10;
+}
+
+.header__container {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4.5em 3em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 0px 1px 20px #bdbdbdbf;
+          box-shadow: 0px 1px 20px #bdbdbdbf;
+  z-index: 15;
+}
+
+.header__logo {
+  cursor: pointer;
+}
+
+.header__navigation {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  font-size: 13.5rem;
+  text-transform: uppercase;
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  background: #ffffff;
+  z-index: 11;
+}
+
+.header__navigation--open {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.header__listContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__listContainer--sublistOff {
+  display: none;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  font-size: 4.6rem;
+}
+
+.header__listContainer--sublistOff--opened {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__list {
+  width: 16rem;
+  padding: 1em 0.2em;
+}
+
+.header__list--subList {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  padding: 0.5em;
+}
+
+.header__item {
+  display: inline-block;
+  color: #14151abf;
+}
+
+.header__item:hover {
+  color: #F0004B;
+}
+
+.header__item::before, .header__item::after {
+  display: block;
+  position: relative;
+  content: "";
+  right: 0;
+  top: 0;
+  background: #f0004b;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.header__item::before, .header__item::after {
+  height: 1px;
+  width: 0;
+}
+
+.header__item:hover::after {
+  width: 100%;
+}
+
+.header__item:hover::before {
+  width: 100%;
+}
+
+.hamburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.hamburger__menu {
+  width: 50px;
+  height: 50px;
+}
+
+.hamburger__line {
+  fill: none;
+  stroke: black;
+  stroke-width: 6;
+  -webkit-transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hamburger__line1 {
+  stroke-dasharray: 40 207;
+  stroke-width: 6;
+}
+
+.hamburger__line1--opened {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+.hamburger__line2 {
+  stroke-dasharray: 50 60;
+  stroke-width: 6;
+}
+
+.hamburger__line2--opened {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+
+.hamburger__line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.hamburger__line3--opened {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+/*# sourceMappingURL=header.css.map */
